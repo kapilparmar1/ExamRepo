@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "d96ee9fb-3b73-4504-b676-b1aabdb164d6",
+		"name": "Kapil STT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17844523"
+	},
+	"item": [
+		{
+			"name": "GetAllJob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/normal/webapi/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"normal",
+						"webapi",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindJob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/normal/webapi/find?jobTitle=Software Engg&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"normal",
+						"webapi",
+						"find"
+					],
+					"query": [
+						{
+							"key": "jobTitle",
+							"value": "Software Engg"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n       \"jobId\": 25,\r\n        \"jobTitle\": \"Kapil Singh as Software Engg\",\r\n        \"jobDescription\": \"React Developer\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/normal/webapi/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"normal",
+						"webapi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
